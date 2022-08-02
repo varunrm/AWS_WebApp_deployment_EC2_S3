@@ -1,0 +1,58 @@
+html,body {
+	font-family: "Roboto", sans-serif;
+	background-color:grey;
+	color: black;
+	text-align: center;
+	}
+h1 {
+  color: black;
+  text-align: center;
+}
+p{
+  color: black;
+  text-align: center;
+}
+#ti{
+  color: black;
+  text-align: left;
+}
+form{
+text-align: center;
+}
+
+.header{
+	width:100%;
+	height:80px;
+	display:block;
+	margin:auto;
+	background-color:green;
+	padding:4px;	
+	
+	
+}
+.container{
+width:80%;
+margin:auto;
+background-color:white;
+color:black;
+padding:30px;
+
+}
+.rowtab{
+display:block;
+padding-block:8px;}
+
+.label-tab{
+display:inline-block;
+width:44%;
+text-align:right;}
+
+.input-tab{
+display:inline-block;
+width:54%;
+text-align:left;}
+
+.select-tab{
+display:inline-block;
+width:54%;
+text-align:left;} 

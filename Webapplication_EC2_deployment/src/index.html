@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Survey Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body >
+<!--	<header>
+	<h1>Student Survey Form</h1>
+	</header> -->
+		<div class="header">
+		<img src="https://swe645-varun-hw.s3.amazonaws.com/logo.png" align="right" alt="Avatar">
+		<h1>Student Survey Form</h1>
+		<!--<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a> -->
+		
+		</div>
+	<section>
+
+		<div class="container" >
+			<div>
+				<h3 style="text-align: center">Please fill in your details</h3>
+			</div>
+			<form id ="survey-form" >
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>First Name:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="text" placeholder="First Name" name="FName" required>
+				</div>	
+				</div>
+				<!-- Last name -->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Last Name:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="text" placeholder="Last Name" name="LName" required>
+				</div>	
+				</div>
+				<!-- Add1-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Address Line 1:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="Address1" placeholder="Address Line 1" name="Address1">
+				</div>	
+				</div>
+				<!-- Add2-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Address Line 2:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="Address2" placeholder="Address Line 2" name="Address2">
+				</div>	
+				</div>
+				<!-- City-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>City:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="text" placeholder="City" name="City">
+				</div>	
+				</div>
+				<!-- State-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>State:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="text" placeholder="State" name="State">
+				</div>	
+				</div>
+				<!-- Zipcode-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Zipcode:		</label>
+				</div>
+				<div class="select-tab">
+					<input type="text" placeholder="Zipcode" name="Zipcode">
+				</div>	
+				</div>
+				<!-- Phone Number-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Phone Number:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+				</div>	
+				</div>
+				<!-- Email-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Email:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="email" placeholder="@gmu.edu" name="Email" required>
+				</div>	
+				</div>
+				<!-- Date of Survey-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Date of Survey:	</label>
+				</div>
+				<div class="select-tab">
+					<input type="date" name="date" required>
+				</div>	
+				</div>
+				<hr>
+				<!-- Checkbox about what they like -->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label> What do you like most about the campus</label>
+				</div>
+				<div class="select-tab">
+					<input type="checkbox" id="students" name="students" value="campusstudents">
+					<label for="students"> Students on Campus</label>&emsp;&emsp;
+					<input type="checkbox" id="atmosphere" name="atmosphere" value="campusatmosphere">
+					<label for="atmosphere"> Atmosphere on the campus</label><br>
+					<input type="checkbox" id="location" name="location" value="campuslocation">
+					<label for="location"> Location of the campus</label>&emsp;
+					<input type="checkbox" id="Dormroom" name="Dormroom" value="Dormrooms">
+					<label for="Dormroom"> Dormrooms on the campus</label><br>
+					<input type="checkbox" id="Campus" name="Campus" value="Campusatmosphere">
+					<label for="Campus"> Campus Atmosphere</label>&emsp;&emsp;
+					<input type="checkbox" id="sport" name="sport" value="sports">
+					<label for="sport"> Sporting Activities </label>
+				</div>
+				</div>
+				<hr>
+				<!-- Radio button on source of interest-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label> What interested you in the campus</label>
+				</div>
+				<div class="select-tab">
+					<input type="radio" id="friends" name="source_interest" value="Friends">
+					<label for="friends">Friends</label><br>
+					<input type="radio" id="television" name="source_interest" value="Television">
+					<label for="television">Television</label><br>
+					<input type="radio" id="internet" name="source_interest" value="Internet">
+					<label for="internet">Internet</label><br>
+					<input type="radio" id="other" name="source_interest" value="other">
+					<label for="other">Other</label>
+				</div>
+				</div>
+				<hr>
+				<!-- Dropdown for recommend -->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>How Likely do you recommend the university </label>
+				</div>
+				<div class="select-tab">
+					<input list="recommends" name="recommend" required>
+					<datalist id="recommends">
+						<option value="Very Likely">
+						<option value="Likely">
+						<option value="Unlikely">
+
+					</datalist>
+				</div>
+				</div>
+				<hr>
+				<!-- text box for raffle-->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Enter numbers for Raffle seperated by comma </label>
+				</div>
+				<div class="select-tab">
+					<input type="text" name="text" placeholder="ex: 1,2,3,4"  onchange="raffle_func(this.value)" required>
+				</div>	 
+				</div>
+				<script>
+				function raffle_func(val)
+				{
+					arr=val.split(",");
+					if(arr.length < 10)
+					{
+						alert("For raffle atleast enter 10 values from 1-100 each seperated by comma");
+					}
+					for (i=0;i<arr.length;i++)
+					{
+						if(arr[i]<1 || arr[i]>100)
+						{
+							alert("Limit the values between 1 to 100");
+						}
+					}
+				}
+				</script>
+				<hr>
+				
+				<!-- additional Comments -->
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Additional Comments</label>
+				</div>
+				<div class="select-tab" >
+					<textarea type="text" name="Comments"style="height:250px width:350px"></textarea>
+				</div>	
+				</div>
+				<hr>
+				<!-- action button-->
+				<div>
+				<input type="submit" value="Submit" " >
+
+      			<input type="button" value="Cancel">
+				</div>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
